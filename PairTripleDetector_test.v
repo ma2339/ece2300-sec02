@@ -91,6 +91,15 @@ module Top();
     // '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     // Add checks for exhaustive testing (i.e., check all possible
     // inputs).
+    check( 0, 0, 0, 0 );
+    check( 0, 0, 1, 0 );
+    check( 0, 1, 0, 0 );
+    check( 0, 1, 1, 1 );
+ 
+    check( 1, 0, 0, 0 );
+    check( 1, 0, 1, 1 );
+    check( 1, 1, 0, 1 );
+    check( 1, 1, 1, 1 );
 
   endtask
 
